@@ -29,7 +29,6 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__user-list">
-          <!-- Пока без формы -->
           <li class="main-nav__user-item user-search" tabindex="0">
             <form class="user-search__form">
               <input class="user-search__input" type="search" placeholder="Поиск по сайту">
@@ -57,38 +56,38 @@
             <a class="main-nav__dropdown-title main-nav__site-link">
               Каталог товаров
             </a>
-            <ul class="main-nav__dropdown-list visually-hidden">
-              <li class="main-nav__dropdown-item">
+            <!-- <ul class="main-nav__dropdown-list">
+              <li class="main-nav__dropdown-item dropdown-item__column-1">
                 <a class="main-nav__dropdown-link" href="#">
                   Виртуальная реальность
                 </a>
               </li>
-              <li class="main-nav__dropdown-item">
+              <li class="main-nav__dropdown-item dropdown-item__column-1">
                 <a class="main-nav__dropdown-link" href="#">
                   Моноподы для селфи
                 </a>
               </li>
-              <li class="main-nav__dropdown-item">
+              <li class="main-nav__dropdown-item dropdown-item__column-1">
                 <a class="main-nav__dropdown-link" href="#">
                   Экшн-камеры
                 </a>
               </li>
-              <li class="main-nav__dropdown-item">
+              <li class="main-nav__dropdown-item dropdown-item__column-2">
                 <a class="main-nav__dropdown-link" href="#">
                   Фитнес-браслеты
                 </a>
               </li>
-              <li class="main-nav__dropdown-item">
+              <li class="main-nav__dropdown-item dropdown-item__column-2">
                 <a class="main-nav__dropdown-link" href="#">
                   Умные часы
                 </a>
               </li>
-              <li class="main-nav__dropdown-item">
+              <li class="main-nav__dropdown-item dropdown-item__column-3">
                 <a class="main-nav__dropdown-link" href="#">
                   Квадрокоптер
                 </a>
               </li>
-            </ul>
+            </ul> -->
           </li>
           <li class="main-nav__site-item site-delivery">
             <a class="main-nav__site-link" href="blank.html">
@@ -113,7 +112,7 @@
   <main class="main-container">
     <!-- Начало слайдера -->
     <section class="preview">
-      <div class="wrapper">
+      <div class="preview-wrapper wrapper">
         <h2 class="visually-hidden">Анонс товаров</h2>
         <input class="preview__input" type="radio" name="preview" id="product-1" checked>
         <input class="preview__input" type="radio" name="preview" id="product-2">
@@ -351,9 +350,9 @@
           <input class="services__input" type="radio" name="services" id="credit">
           <div class="services__slider">
             <div class="services__togglers">
-              <label class="services__toggler" for="delivery" tabindex="0">Доставка</label>
-              <label class="services__toggler" for="assurance" tabindex="0">Гарантия</label>
-              <label class="services__toggler" for="credit" tabindex="0">Кредит</label>
+              <label class="services__toggler global-button" for="delivery" tabindex="0">Доставка</label>
+              <label class="services__toggler global-button" for="assurance" tabindex="0">Гарантия</label>
+              <label class="services__toggler global-button" for="credit" tabindex="0">Кредит</label>
             </div>
             <div class="services__slider-content">
               <div class="services__slide delivery-slide">
@@ -396,23 +395,23 @@
       <div class="wrapper">
         <div class="partners__items">
           <div class="partners__item">
-            <a class="partners__item-link" href="">
-              <img class="partners__item-img" src="images/logo-1.png" alt="Логотип компании-партнёра">
+            <a class="partners__item-link logo-1" href="">
+              <span class="visually-hidden">Логотоп компании-партнёра</span>
             </a>
           </div>
           <div class="partners__item">
-            <a class="partners__item-link" href="">
-              <img class="partners__item-img" src="images/logo-2.png" alt="Логотип компании-партнёра">
+            <a class="partners__item-link logo-2" href="">
+              <span class="visually-hidden">Логотоп компании-партнёра</span>
             </a>
           </div>
           <div class="partners__item">
-            <a class="partners__item-link" href="">
-              <img class="partners__item-img" src="images/logo-3.png" alt="Логотип компании-партнёра">
+            <a class="partners__item-link logo-3" href="">
+              <span class="visually-hidden">Логотоп компании-партнёра</span>
             </a>
           </div>
           <div class="partners__item">
-            <a class="partners__item-link" href="">
-              <img class="partners__item-img" src="images/logo-4.png" alt="Логотип компании-партнёра">
+            <a class="partners__item-link logo-4" href="">
+              <span class="visually-hidden">Логотоп компании-партнёра</span>
             </a>
           </div>
         </div>
@@ -513,12 +512,12 @@
               </a>
             </li>
             <li class="main-footer__services-item">
-              <a class="main-footer__services-link" href="">        
+              <a class="main-footer__services-link" href="">
                 Гарантия
               </a>
             </li>
             <li class="main-footer__services-item">
-              <a class="main-footer__services-link" href="">      
+              <a class="main-footer__services-link" href="">
                 Контакты
               </a>
             </li>
