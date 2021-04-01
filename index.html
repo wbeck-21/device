@@ -29,31 +29,36 @@
       </a>
       <nav class="main-nav">
         <ul class="main-nav__user-list">
-          <li class="main-nav__user-item user-search" tabindex="0">
+          <!-- Пока без формы -->
+          <li class="main-nav__column--left user-search" tabindex="0">
             <form class="user-search__form">
               <input class="user-search__input" type="search" placeholder="Поиск по сайту">
               <button class="user-search__btn" type="submit">Найти</button>
             </form>
           </li>
-          <li class="main-nav__user-item user-login">
-            <a class="main-nav__user-link" href="blank.html">
-              Войти
-            </a>
-          </li>
-          <li class="main-nav__user-item  user-comparison">
-            <a class="main-nav__user-link" href="blank.html">
-              Сравнить
-            </a>
-          </li>
-          <li class="main-nav__user-item  user-cart">
-            <a class="main-nav__user-link" href="blank.html">
-              Корзина
-            </a>
+          <li class="main-nav__column--right">
+            <ul class="main-nav__user-items">
+              <li class="main-nav__user-item user-exist">
+                <a class="main-nav__user-link" href="blank.html">
+                  Войти
+                </a>
+              </li>
+              <li class="main-nav__user-item  user-comparison">
+                <a class="main-nav__user-link" href="blank.html">
+                  Сравнить
+                </a>
+              </li>
+              <li class="main-nav__user-item  user-cart">
+                <a class="main-nav__user-link" href="blank.html">
+                  Корзина
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
         <ul class="main-nav__site-list">
           <li class="main-nav__site-item site-catalog">
-            <a class="main-nav__dropdown-title main-nav__site-link">
+            <a class="main-nav__dropdown-title main-nav__site-link" href="catalog.html">
               Каталог товаров
             </a>
             <!-- <ul class="main-nav__dropdown-list">
@@ -235,7 +240,7 @@
           <li class="product-categoty__item">
             <a class="product-category__link" href="#">
               <svg width="71" height="87" viewBox="0 0 71 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#clip0)">
+                <g>
                   <path
                     d="M53.349 1.49C53.349 0.754 52.771 0 52.038 0H9.053C8.32 0 7.672 0.754 7.672 1.49V5.012H53.348V1.49H53.349Z"
                     fill="#363636" />
@@ -268,7 +273,7 @@
                     fill="#363636" />
                 </g>
                 <defs>
-                  <clipPath id="clip0">
+                  <clipPath>
                     <rect width="71" height="87" fill="white" />
                   </clipPath>
                 </defs>
