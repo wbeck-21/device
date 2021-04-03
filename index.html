@@ -57,57 +57,61 @@
           </li>
         </ul>
         <ul class="main-nav__site-list">
-          <li class="main-nav__site-item site-catalog">
-            <a class="main-nav__dropdown-title main-nav__site-link" href="catalog.html">
+          <li class="main-nav__site-column site-catalog">
+            <a class="main-nav__dropdown-title main-nav__site-link">
               Каталог товаров
             </a>
-            <!-- <ul class="main-nav__dropdown-list">
-              <li class="main-nav__dropdown-item dropdown-item__column-1">
+            <ul class="main-nav__dropdown-list visually-hidden">
+              <li class="main-nav__dropdown-item dropdown-item-1">
                 <a class="main-nav__dropdown-link" href="#">
                   Виртуальная реальность
                 </a>
               </li>
-              <li class="main-nav__dropdown-item dropdown-item__column-1">
+              <li class="main-nav__dropdown-item dropdown-item-2">
                 <a class="main-nav__dropdown-link" href="#">
                   Моноподы для селфи
                 </a>
               </li>
-              <li class="main-nav__dropdown-item dropdown-item__column-1">
+              <li class="main-nav__dropdown-item dropdown-item-3">
                 <a class="main-nav__dropdown-link" href="#">
                   Экшн-камеры
                 </a>
               </li>
-              <li class="main-nav__dropdown-item dropdown-item__column-2">
+              <li class="main-nav__dropdown-item dropdown-item-4">
                 <a class="main-nav__dropdown-link" href="#">
                   Фитнес-браслеты
                 </a>
               </li>
-              <li class="main-nav__dropdown-item dropdown-item__column-2">
+              <li class="main-nav__dropdown-item dropdown-item-5">
                 <a class="main-nav__dropdown-link" href="#">
                   Умные часы
                 </a>
               </li>
-              <li class="main-nav__dropdown-item dropdown-item__column-3">
+              <li class="main-nav__dropdown-item dropdown-item-6">
                 <a class="main-nav__dropdown-link" href="#">
                   Квадрокоптер
                 </a>
               </li>
-            </ul> -->
+            </ul>
           </li>
-          <li class="main-nav__site-item site-delivery">
-            <a class="main-nav__site-link" href="blank.html">
-              Доставка
-            </a>
-          </li>
-          <li class="main-nav__site-item site-assurance">
-            <a class="main-nav__site-link" href="blank.html">
-              Гарантия
-            </a>
-          </li>
-          <li class="main-nav__site-item site-contacts">
-            <a class="main-nav__site-link" href="blank.html">
-              Контакты
-            </a>
+          <li class="main-nav__site-column">
+            <ul class="main-nav__site-items">
+              <li class="main-nav__site-item site-delivery">
+                <a class="main-nav__site-link" href="blank.html">
+                  Доставка
+                </a>
+              </li>
+              <li class="main-nav__site-item site-assurance">
+                <a class="main-nav__site-link" href="blank.html">
+                  Гарантия
+                </a>
+              </li>
+              <li class="main-nav__site-item site-contacts">
+                <a class="main-nav__site-link" href="blank.html">
+                  Контакты
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>
@@ -191,7 +195,7 @@
           </div>
         </div>
         <div class="preview__togglers">
-          <label class="preview__toggler" for="product-1" tabindex="0">1</label>
+          <label class="preview__toggler" for="product-1" tabindex="0"ы>1</label>
           <label class="preview__toggler" for="product-2" tabindex="0">2</label>
           <label class="preview__toggler" for="product-3" tabindex="0">3</label>
         </div>
@@ -222,7 +226,7 @@
             </p>
           </li>
           <li class="product-categoty__item">
-            <a class="product-category__link" href="#">
+            <a class="product-category__link" href="catalog.html">
               <svg width="86" height="117" viewBox="0 0 86 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M82.821 4.01099H3.32997C1.56897 4.01099 0.141968 5.43799 0.141968 7.19899V53.612C0.141968 55.375 1.56897 56.801 3.32997 56.801H82.822C84.584 56.801 86.011 55.374 86.011 53.612V7.19899C86.011 5.43799 84.583 4.01099 82.821 4.01099ZM8.39197 37.236H8.16597C6.40397 37.236 4.97697 35.807 4.97697 34.047V26.764C4.97697 25.003 6.40397 23.576 8.16597 23.576H8.39197V37.236ZM69.623 52.408H13.341V8.40199H69.623V52.408ZM78.4 34.552C76.111 34.552 74.254 32.697 74.254 30.405C74.254 28.113 76.11 26.258 78.4 26.258C80.691 26.258 82.548 28.113 82.548 30.405C82.548 32.697 80.691 34.552 78.4 34.552Z"
@@ -355,7 +359,7 @@
           <input class="services__input" type="radio" name="services" id="credit">
           <div class="services__slider">
             <div class="services__togglers">
-              <label class="services__toggler global-button" for="delivery" tabindex="0">Доставка</label>
+              <label class="services__toggler global-button" for="delivery" tabindex="0" autofocus>Доставка</label>
               <label class="services__toggler global-button" for="assurance" tabindex="0">Гарантия</label>
               <label class="services__toggler global-button" for="credit" tabindex="0">Кредит</label>
             </div>
@@ -579,6 +583,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
