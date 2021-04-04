@@ -38,7 +38,7 @@
           </li>
           <li class="main-nav__column--right">
             <ul class="main-nav__user-items">
-              <li class="main-nav__user-item user-exist">
+              <li class="main-nav__user-item user-login">
                 <a class="main-nav__user-link" href="blank.html">
                   Войти
                 </a>
@@ -465,7 +465,9 @@
               </p>
               <div class="map">
                 <!-- Здесь будет iframe -->
-                <img class="map-img" src="images/map.jpg" alt="Карта" width="560" height="222">
+                <a class="map-link">
+                  <img class="map-img" src="images/map.jpg" alt="Карта" width="560" height="222">
+                </a>
               </div>
               <a class="contacts__link global-button" href="">Напишите нам</a>
             </div>
@@ -583,6 +585,12 @@
       </div>
     </div>
   </footer>
+  <section class="popup visually-hidden">
+    <div class="popup__map">
+      <button class="popup__map-btn"></button>
+      <img class="popup__map-img" src="images/map-big.png" alt="Местоположение компании на карте">
+    </div>
+  </section>
   <script src="js/main.js"></script>
 </body>
 

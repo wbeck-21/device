@@ -368,7 +368,6 @@ a {
   opacity: 0.3;
 }
 
-
 .main-nav__site-link:hover {
   opacity: 0.6;
 }
@@ -978,10 +977,10 @@ tbody {
 }
 
 .main-footer__user-list {
+  display: flex;
   font-weight: 300;
   font-size: 15px;
   line-height: 20px;
-  display: flex;
   list-style: none;
   padding-left: 0;
   margin: 0;
@@ -1231,9 +1230,9 @@ tbody {
 }
 
 .filter-show__bar {
-  width: 138px;
+  width: 126px;
   height: 2px;
-  background: var(--basic-green);
+  background-color: var(--special-green);
 }
 
 .filter-show__toggles {
@@ -1266,7 +1265,7 @@ tbody {
 }
 
 .filter-show__range-controls .toggle-max {
-  left: 94px;
+  left: 110px;
 }
 
 .filter-show__price-controls input {
@@ -1445,17 +1444,14 @@ tbody {
 
 .filter-sort__list {
   display: flex;
-  list-style: none;
-  padding-left: 0;
   font-size: 14px;
   line-height: 19px;
+  list-style: none;
+  margin-right: 123px;
+  padding-left: 0;
 }
 
 .filter-sort__item {
-  margin-right: 30px;
-}
-
-.filter-sort__link {
   margin-right: 30px;
 }
 
@@ -1476,11 +1472,12 @@ tbody {
   list-style: none;
   padding-left: 0;
   padding-bottom: 20px;
+  margin-right: 18px;
 }
 
 .filter-sort__control {
   display: flex;
-  margin-right: 20px;
+  margin-right: 34px;
   position: relative;
 }
 
@@ -1523,11 +1520,6 @@ tbody {
   display: grid;
   grid-template-rows: min-content auto min-content;
   grid-column: 5/-1;
-}
-
-.filter-sort {
-  grid-column: 1/-1;
-  grid-row: 1/2;
 }
 
 .gallery {
@@ -1680,3 +1672,47 @@ tbody {
 }
 
 /* Gallery end */
+
+/* Popup start */
+.popup {
+  margin-top: 100px;
+  margin-left: calc(50% - 497px);
+  position: fixed;
+  z-index: 20;
+}
+
+.popup__map {
+  position: relative;
+  width: 994px;
+  height: 593px;
+}
+
+.popup__map-btn {
+  width: 55px;
+  height: 55px;
+  background: #f7e296;
+  border: 0;
+  border-radius: 50%;
+  opacity: 0.5;
+  right: 30px;
+  top: 15px;
+  position: relative;
+  position: absolute;
+}
+
+.popup__map-btn::after {
+  content: url(../images/cross.svg);
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  position: absolute;
+}
+
+.popup__map-btn:hover {
+  opacity: 1;
+}
+
+.popup__map-btn:focus {
+  opacity: 0.3;
+}
+
+/* Popup end */
